@@ -17,13 +17,13 @@ public class AppLapiseira {
 		int repetir = 1;
 		while (repetir != 0) {
 
-			BufferedReader leitura = new BufferedReader(new InputStreamReader(System.in));
+			BufferedReader ler = new BufferedReader(new InputStreamReader(System.in));
 
 			System.out.println("Informe a marca da lapiseira");
-			String marca = leitura.readLine();
+			String marca = ler.readLine();
 
 			System.out.println("Informe a cor da lapiseira");
-			String cor = leitura.readLine();
+			String cor = ler.readLine();
 
 			System.out.println("Informe a espessura do grafite");
 			float grafite = Float.parseFloat(leitura.readLine());
@@ -31,7 +31,7 @@ public class AppLapiseira {
 			Lapiseira lap = new Lapiseira(marca, cor, grafite);
 			listaLapiseiras.add(lap);
 
-			System.out.println("Você quer adicionar mais lapiseiras? Pressione 1--> Sim ou 0 --> Não");
+			System.out.println("VocÃª quer adicionar mais lapiseiras? Pressione 1--> Sim ou 0 --> NÃ£o");
 			repetir = Integer.parseInt(leitura.readLine());
 
 		}
